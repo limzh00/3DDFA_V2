@@ -35,6 +35,7 @@ Compared to [3DDFA](https://github.com/cleardusk/3DDFA), 3DDFA_V2 achieves bette
 ## Getting started
 
 ### Requirements
+
 See [requirements.txt](./requirements.txt), tested on macOS and Linux platforms. The Windows users may refer to [FQA](#FQA) for building issues. Note that this repo uses Python3. The major dependencies are PyTorch, numpy, opencv-python and onnxruntime, etc. If you run the demos with `--onnx` flag to do acceleration, you may need to install `libomp` first, i.e., `brew install libomp` on macOS.
 
 ### Usage
@@ -57,13 +58,14 @@ sh ./build_sim3dr.sh
 cd ..
 
 # the faster mesh render
+
 cd utils/asset
 gcc -shared -Wall -O3 render.c -o render.so -fPIC
 cd ../..
 ```
 
 or simply build them by -->
-```shell script
+​```shell script
 sh ./build.sh
 ```
 
@@ -210,7 +212,7 @@ If your work or research benefits from this repo, please cite two bibs below : )
         booktitle =    {Proceedings of the European Conference on Computer Vision (ECCV)},
         year =         {2020}
     }
-
+    
     @misc{3ddfa_cleardusk,
         author =       {Guo, Jianzhu and Zhu, Xiangyu and Lei, Zhen},
         title =        {3DDFA},
